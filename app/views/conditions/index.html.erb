@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Max Temperature</th>
+    <th>Mean Temperature</th>
+    <th>Min Temperature</th>
+    <th>Mean Humidity</th>
+    <th>Mean Visibility</th>
+    <th>Mean Wind Speed</th>
+    <th>Precipitation</th>
+    <th>Zip Code</th>
+  </tr>
+  <% @conditions.each do |condition| %>
+    <tr>
+      <td><%= condition.date %></td>
+      <td><%= condition.max_temperature %></td>
+      <td><%= condition.mean_temperature %></td>
+      <td><%= condition.min_temperature %></td>
+      <td><%= condition.mean_humidity %></td>
+      <td><%= condition.mean_visibility %></td>
+      <td><%= condition.mean_wind_speed %></td>
+      <td><%= condition.precipitation %></td>
+      <td><%= condition.zip_code %></td>
+    </tr>
+  <% end %>
+</table>
